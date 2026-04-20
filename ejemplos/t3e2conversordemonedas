@@ -1,0 +1,21 @@
+#Pedimos a la usuaria la cantidad en euros
+euros = float(input("Introduce una cantidad en euros: "))
+
+#Convertimos a dolares
+def convertiradolares(euros):
+    dolares = euros * 1.1
+    return dolares
+
+#Convertimos a libras
+def convertiralibras(euros):
+    libras = euros * 0.87
+    return libras
+
+#Conversiones
+dolares = convertiradolares(euros)
+libras = convertiralibras(euros)
+
+# Mostramos resultados
+print("Euros:", euros)
+print("Dólares:", dolares)
+print("Libras:", libras)

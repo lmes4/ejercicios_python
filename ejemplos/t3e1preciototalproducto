@@ -1,0 +1,20 @@
+#Pedimos datos
+producto = input("Nombre del producto: ")
+precio = float(input("Precio por unidad: "))
+cantidad = int(input("Cantidad: "))
+descuento = float(input("Descuento (%): "))
+iva = float(input("IVA (%): "))
+
+#Creamos la función
+def calcularTotal(precio, cantidad, descuento, iva):
+    total = precio * cantidad
+    total_descuento = total - (total * descuento / 100)
+    total_final = total_descuento + (total_descuento * iva / 100)
+    return total_final
+
+#Calcula precio total aplicadno descuento e IVA
+resultado = calcularTotal(precio, cantidad, descuento, iva)
+
+#Muestra resultado final
+print("Producto:", producto)
+print("Total a pagar:", resultado)
