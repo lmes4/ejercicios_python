@@ -1,5 +1,5 @@
 #Cadena
-nombre = "La Boda de mi Mejor Amigo"
+nombre = "Pelicula favorita"
 #Numeros (int)
 año = 1997
 #Numeros (int)
