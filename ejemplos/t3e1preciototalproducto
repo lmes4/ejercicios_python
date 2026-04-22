@@ -31,3 +31,6 @@ def calcularTotal():
 
 #Muestra resultado final
 print("el total de la compra es:" + nombre_del_producto + "es", total_iva, "euros")
+
+
+calcular_operaciones()

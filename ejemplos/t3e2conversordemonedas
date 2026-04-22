@@ -15,7 +15,18 @@ def convertiralibras(euros):
 dolares = convertiradolares(euros)
 libras = convertiralibras(euros)
 
-# Mostramos resultados
-print("Euros:", euros)
-print("Dólares:", dolares)
-print("Libras:", libras)
+#CorreccionReyes
+#Ask the user for an amount in euros
+def conversor ():
+    quantity_in_euros = float(input("Enter a quantity price in euros: "))
+
+    print("Convert to Dollars")
+    quantity_in_dollars = convert_from_euros_to_dolars(quantity_in_euros)
+    print(quantity_in_dollars)
+
+    print("Convert to Pound")
+    print(convert_from_euros_to_pounds(quantity_in_euros))
+
+
+
+conversor()
