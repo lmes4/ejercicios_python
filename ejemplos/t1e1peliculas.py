@@ -35,3 +35,34 @@ print("El genero de la pelicula es ", nombre_genero)
 print("La duracion de la pelicula es ", minutos_duracion)
 
 print("¿Tiene premios?", tiene_premios)
+
+#String
+name = "Favorite movie"
+#Numbers (int)
+year = 1997
+#Numbers (int)
+minutes = 104
+#Booleans (True or False)
+has_awards = False
+
+# Print variables
+print("Name", name)
+print("Year", year)
+print("Minutes", minutes)
+print("Has awards?", has_awards)
+
+#Get values entered by the user
+
+movie_name = input("What is your favorite movie? ")
+director_name = input("Who is the director? ")
+release_year = input("What year was it released? ")
+genre_name = input("What genre is the movie? ")
+duration_minutes = input("How long is the movie? ")
+
+
+print("Your favorite movie is", movie_name)
+print("The director of the movie is", director_name)
+print("The release year was", release_year)
+print("The genre of the movie is", genre_name)
+print("The duration of the movie is", duration_minutes)
+print("Has awards?", has_awards)
