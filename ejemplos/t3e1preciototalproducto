@@ -1,20 +1,33 @@
 #Pedimos datos
 producto = input("Nombre del producto: ")
 precio = float(input("Precio por unidad: "))
-cantidad = int(input("Cantidad: "))
-descuento = float(input("Descuento (%): "))
-iva = float(input("IVA (%): "))
+cantidad = int(input("Cuanto va a comprar: "))
+descuento = float(input("Que descuento tiene (%): "))
+iva = float(input("Que porcentaje de IVA (%) tiene: "))
 
-#Creamos la función
-def calcularTotal(precio, cantidad, descuento, iva):
-    total = precio * cantidad
-    total_descuento = total - (total * descuento / 100)
-    total_final = total_descuento + (total_descuento * iva / 100)
-    return total_final
+#Creamos las funciones
+def calcular_total_producto (unidad, cantidad):
+    return precio_total
+def calcular_descuento (total_producto, descuento):
+    total_descuento = total_producto - (total_producto * descuento)/100
+    return total_descuento
 
-#Calcula precio total aplicadno descuento e IVA
-resultado = calcularTotal(precio, cantidad, descuento, iva)
+def calcular_IVA (total,iva):
+    total_iva = total * iva
+    return total_iva
+
+def calcularTotal():
+    #solicitud de parametros al usuario
+    producto = input("Nombre del producto: ")
+    precio = float(input("Precio por unidad: "))
+    cantidad = int(input("Cuanto va a comprar: "))
+    descuento = float(input("Que descuento tiene (%): "))
+    iva = float(input("Que porcentaje de IVA (%) tiene: "))
+
+    total_compra = calcular_total_producto(unidad, cantidad)
+    total_descuento = calcular_descuento(total_compra, descuento)
+    total_iva = calcular_IVA(total_descuento, iva)
+
 
 #Muestra resultado final
-print("Producto:", producto)
-print("Total a pagar:", resultado)
+print("el total de la compra es:" + nombre_del_producto + "es", total_iva, "euros")
