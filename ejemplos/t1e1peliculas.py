@@ -1,16 +1,19 @@
 #Cadena
 nombre = "Pelicula favorita"
 #Numeros (int)
-año = 1997
+year = 1997
+#Genero
+genero = comedia romantica
 #Numeros (int)
-minutos = 104
+minutes = 104
 #Booleanos (True o False)
 tiene_premios = False
 
 #Imprimir las variables
 print("Nombre", nombre)
-print("Año", año)
-print("Minutos ", minutos)
+print("Año", year)
+print("genero", genero)
+print("Minutos ", minutes)
 print("Tiene premios?", tiene_premios)
 
 #Obtener valores introducidos por el usuario
@@ -45,14 +48,13 @@ minutes = 104
 #Booleans (True or False)
 has_awards = False
 
-# Print variables
+#Print variables
 print("Name", name)
 print("Year", year)
 print("Minutes", minutes)
 print("Has awards?", has_awards)
 
 #Get values entered by the user
-
 movie_name = input("What is your favorite movie? ")
 director_name = input("Who is the director? ")
 release_year = input("What year was it released? ")
