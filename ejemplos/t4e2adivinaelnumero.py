@@ -1,16 +1,22 @@
-def aciertanumero(numero):
-    if (numero == 4):
-        mensaje = "¡enhorabuena! Has acertado el numero"
-    elif (numero > 4):
-        mensaje = "¡MEC ERROR! Te has equivocado de numero"
+#Pide a la usuaria un número entre 1 y 10.
+#El número ganador es el 4.
+#Muestra:
+#Mensaje de victoria si acierta.
+#Mensaje de derrota si falla.
+
+
+def ganador(numero):
+    numero_ganador = 4
+    if numero == numero_ganador:
+        print("VICTORIA: el número 4 es el ganador")
     else:
-        mensaje = "¡MEC ERROR! Te sigues equivocando de numero"
-    return mensaje
+        print("Ha perdido intente de nuevo")
+  
 
-#Pedimos al usuario que adivine el numero
-numero = float(input("Acierta el numero que estoy pensando: "))
+def ejercicioganador():
+    numero = int(input("Escribe un número entre 1 y 10: "))
 
-#Llamamos acierta numero para que nos diga el mensaje
-mensaje = aciertanumero (numero)
-#imprimimos el mensaje con el resultado del numero elegido
-print(mensaje)
+    ganador(numero)
+
+
+ejercicioganador()

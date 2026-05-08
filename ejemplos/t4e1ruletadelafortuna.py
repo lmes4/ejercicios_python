@@ -12,7 +12,9 @@ def colormensaje(color):
     return mensaje
 
 
-# Pedimos al usuario que elija un color
-color = input("Elige un color: ")
+def main():
+    # Pedimos al usuario que elija un color
+    color = input("Elige un color: ")
 
 print(colormensaje(color))
+main()

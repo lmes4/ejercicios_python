@@ -5,3 +5,5 @@ for i in range(5):
         print("¡Enhorabuena, has conseguido premio!")
     else:
         print("Mmmmmmm, prueba otro color")
+
+color()

@@ -1,16 +1,24 @@
-#Pedir al usuario cuantas notas quiere introducir
-cantidad = int(input("¿Cuántas notas quieres introducir? "))
+def calcularmedia(cantNotas):
+    suma = 0
 
-suma = 0
+    for i in range(cantNotas):
+        valor = int(input("Ingrese nota: "))
+        suma = suma + valor
+   
+    media = suma/cantNotas
 
-#Bucle para pedir cada nota
-for i in range(cantidad):
-    nota = float(input(f"Introduce la nota {i+1}: "))
-    suma += nota
+    return media;
 
-#Calcular la media
-media = suma / cantidad
 
-#Imprimimos suma y media
-print(f"La suma total es: {suma}")
-print(f"La media es: {media}")
+def calculadora ():
+    print("Calculadora de nota media")
+    cantNotas = int(input("¿Cuántas notas desea introducir?: "))
+
+    media = calcularmedia(cantNotas)
+
+
+    print("Media " + str(media))
+
+    print("Media", media)
+
+calculadora()
